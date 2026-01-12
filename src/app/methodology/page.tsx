@@ -6,7 +6,7 @@ export default function MethodologyPage() {
 
         <div className="prose prose-gray max-w-none">
           <p className="text-gray-600 mb-8 text-lg">
-            PriceWise provides benchmarking insights based on anonymous, real-world transaction data
+            TrueCost Index provides benchmarking insights based on anonymous, real-world transaction data
             submitted by users across Canada. This page explains how we collect, validate, and
             calculate the benchmarks you see.
           </p>

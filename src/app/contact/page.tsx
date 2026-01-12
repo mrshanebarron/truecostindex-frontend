@@ -1,14 +1,34 @@
 'use client';
 
 import { useState } from 'react';
+import { api } from '@/lib/api';
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // In production, this would send to an API endpoint
-    setSubmitted(true);
+    setLoading(true);
+    setError(null);
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      email: formData.get('email') as string,
+      subject: formData.get('subject') as string,
+      message: formData.get('message') as string,
+    };
+
+    try {
+      await api.post('/api/contact', data);
+      setSubmitted(true);
+    } catch (err) {
+      setError('Failed to send message. Please try again.');
+      console.error('Contact form error:', err);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -16,7 +36,7 @@ export default function ContactPage() {
       <div className="max-w-xl mx-auto px-4">
         <h1 className="text-3xl font-bold text-gray-900 mb-4">Contact Us</h1>
         <p className="text-gray-600 mb-8">
-          Have questions about PriceWise? We&apos;d like to hear from you.
+          Have questions about TrueCost Index? We&apos;d like to hear from you.
         </p>
 
         {submitted ? (
@@ -43,6 +63,12 @@ export default function ContactPage() {
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="card">
+            {error && (
+              <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg text-red-700">
+                {error}
+              </div>
+            )}
+
             <div className="mb-6">
               <label htmlFor="email" className="form-label">
                 Email Address
@@ -63,11 +89,11 @@ export default function ContactPage() {
               </label>
               <select id="subject" name="subject" required className="form-select">
                 <option value="">Select a topic</option>
-                <option value="general">General Inquiry</option>
-                <option value="privacy">Privacy Question</option>
-                <option value="data">Data Question</option>
-                <option value="feedback">Feedback</option>
-                <option value="other">Other</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Privacy Question">Privacy Question</option>
+                <option value="Data Question">Data Question</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Other">Other</option>
               </select>
             </div>
 
@@ -85,8 +111,8 @@ export default function ContactPage() {
               />
             </div>
 
-            <button type="submit" className="btn-primary w-full">
-              Send Message
+            <button type="submit" className="btn-primary w-full" disabled={loading}>
+              {loading ? 'Sending...' : 'Send Message'}
             </button>
           </form>
         )}

@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PriceWise - Anonymous Pricing Benchmarks",
+  title: "TrueCost Index - Anonymous Pricing Benchmarks",
   description: "See what people actually paid. Anonymous, real-world pricing benchmarks based on real transactions across Canadian cities.",
 };
 

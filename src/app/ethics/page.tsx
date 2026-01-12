@@ -5,7 +5,7 @@ export default function EthicsPage() {
         <h1 className="text-3xl font-bold text-gray-900 mb-8">Data Ethics</h1>
 
         <p className="text-gray-600 mb-8 text-lg">
-          PriceWise is built on a foundation of ethical data practices. These principles guide
+          TrueCost Index is built on a foundation of ethical data practices. These principles guide
           every decision we make about data collection, storage, and usage.
         </p>
 
@@ -31,7 +31,7 @@ export default function EthicsPage() {
           <section className="card">
             <h2 className="text-xl font-semibold text-gray-900 mb-3">3. Public Interest Orientation</h2>
             <p className="text-gray-600">
-              PriceWise exists to serve the public interest. Our goal is to bring transparency
+              TrueCost Index exists to serve the public interest. Our goal is to bring transparency
               to service pricing, helping consumers make informed decisions. We are not here to
               advantage any particular vendor, industry, or commercial interest.
             </p>

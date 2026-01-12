@@ -7,7 +7,7 @@ export default function Header() {
     <header className="bg-white border-b border-gray-100">
       <nav className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold text-gray-900">
-          PriceWise
+          TrueCost Index
         </Link>
         <div className="flex items-center gap-6">
           <Link href="/about" className="text-gray-600 hover:text-gray-900 text-sm">

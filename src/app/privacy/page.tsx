@@ -79,7 +79,7 @@ export default function PrivacyPage() {
           <section className="mb-8">
             <h2 className="text-xl font-semibold text-gray-900 mb-4">Canadian Privacy Standards</h2>
             <p className="text-gray-600">
-              PriceWise is designed to meet Canadian privacy standards, including principles from
+              TrueCost Index is designed to meet Canadian privacy standards, including principles from
               PIPEDA (Personal Information Protection and Electronic Documents Act). We collect only
               what is necessary, use data only for stated purposes, and maintain appropriate safeguards.
             </p>

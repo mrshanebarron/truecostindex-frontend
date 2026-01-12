@@ -2,7 +2,7 @@ export default function AboutPage() {
   return (
     <div className="bg-white py-16">
       <div className="max-w-3xl mx-auto px-4">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">About PriceWise</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-8">About TrueCost Index</h1>
 
         <div className="prose prose-gray max-w-none">
           <section className="mb-8">
@@ -17,7 +17,7 @@ export default function AboutPage() {
               know if you&apos;re getting a fair deal.
             </p>
             <p className="text-gray-600">
-              PriceWise exists to change that. By collecting anonymous, real-world pricing data,
+              TrueCost Index exists to change that. By collecting anonymous, real-world pricing data,
               we create benchmarks that help everyone make more informed decisions.
             </p>
           </section>
@@ -43,7 +43,7 @@ export default function AboutPage() {
           <section className="mb-8">
             <h2 className="text-xl font-semibold text-gray-900 mb-4">What This Is Not</h2>
             <p className="text-gray-600 mb-4">
-              PriceWise is intentionally focused. We are <strong>not</strong>:
+              TrueCost Index is intentionally focused. We are <strong>not</strong>:
             </p>
             <ul className="list-disc pl-6 text-gray-600 space-y-2">
               <li>
@@ -91,7 +91,7 @@ export default function AboutPage() {
           <section>
             <h2 className="text-xl font-semibold text-gray-900 mb-4">The Value of the Dataset</h2>
             <p className="text-gray-600 mb-4">
-              The true value of PriceWise lies in the dataset we&apos;re building together. Every
+              The true value of TrueCost Index lies in the dataset we&apos;re building together. Every
               anonymous submission helps:
             </p>
             <ul className="list-disc pl-6 text-gray-600 space-y-2">

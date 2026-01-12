@@ -60,7 +60,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-200 text-center text-gray-500 text-sm">
-          &copy; {new Date().getFullYear()} PriceWise. Privacy-first pricing benchmarks.
+          &copy; {new Date().getFullYear()} TrueCost Index. Privacy-first pricing benchmarks.
         </div>
       </div>
     </footer>
