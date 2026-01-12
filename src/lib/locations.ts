@@ -49,6 +49,21 @@ export const provinces = [
     name: 'Prince Edward Island',
     abbr: 'PE',
     cities: ['Charlottetown', 'Summerside']
+  },
+  {
+    name: 'Northwest Territories',
+    abbr: 'NT',
+    cities: ['Yellowknife', 'Hay River', 'Inuvik']
+  },
+  {
+    name: 'Yukon',
+    abbr: 'YT',
+    cities: ['Whitehorse', 'Dawson City']
+  },
+  {
+    name: 'Nunavut',
+    abbr: 'NU',
+    cities: ['Iqaluit', 'Rankin Inlet', 'Arviat']
   }
 ];
 
@@ -64,7 +79,8 @@ export const serviceCategories = [
   'Haircut',
   'House Cleaning',
   'Lawn Care',
-  'Moving Services'
+  'Moving Services',
+  'Other Service'
 ];
 
 export function getCitiesForProvince(provinceName: string): string[] {

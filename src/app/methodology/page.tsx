@@ -6,7 +6,7 @@ export default function MethodologyPage() {
 
         <div className="prose prose-gray max-w-none">
           <p className="text-gray-600 mb-8 text-lg">
-            TrueCost Index provides benchmarking insights based on anonymous, real-world transaction data
+            PriceWise provides benchmarking insights based on anonymous, real-world transaction data
             submitted by users across Canada. This page explains how we collect, validate, and
             calculate the benchmarks you see.
           </p>
@@ -112,12 +112,33 @@ export default function MethodologyPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">Canadian Focus</h2>
-            <p className="text-gray-600">
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">Why We Start With Major Canadian Cities</h2>
+            <p className="text-gray-600 mb-4">
               Initial benchmarks focus on Canadian markets to ensure pricing comparability, privacy
-              protection, and statistical reliability. Prices vary significantly by country due to
-              currency, labor costs, and regulatory differences. By focusing on Canada first, we
-              can provide more accurate and actionable insights.
+              protection, and statistical reliability.
+            </p>
+            <p className="text-gray-600 mb-4">
+              Prices vary significantly by country due to currency, labor costs, and regulatory
+              differences. By focusing on major Canadian cities first, we can:
+            </p>
+            <ul className="list-disc pl-6 text-gray-600 space-y-2 mb-4">
+              <li>
+                <strong>Ensure pricing comparability:</strong> Comparing prices within the same
+                currency and economic context produces more meaningful insights
+              </li>
+              <li>
+                <strong>Protect privacy:</strong> Larger urban centers provide the volume of
+                submissions needed to meet privacy thresholds without exposing individual transactions
+              </li>
+              <li>
+                <strong>Build statistical reliability:</strong> Dense population areas generate
+                enough data to produce stable, trustworthy benchmarks
+              </li>
+            </ul>
+            <p className="text-gray-600">
+              As our dataset grows, coverage will expand to include more regions across all provinces
+              and territories. The system automatically falls back to broader geographic levels when
+              local data is insufficient, ensuring you always receive the most relevant benchmark available.
             </p>
           </section>
 

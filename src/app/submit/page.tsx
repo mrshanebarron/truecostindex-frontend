@@ -186,7 +186,8 @@ export default function SubmitPage() {
           {step === 'category' && (
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-2">What service did you pay for?</h2>
-              <p className="text-gray-600 mb-6">Select the category that best matches your service.</p>
+              <p className="text-gray-600 mb-4">Select the category that best matches your service.</p>
+              <p className="text-sm text-gray-500 mb-6">Choose the closest match. Exact service details aren&apos;t required.</p>
               <div className="grid grid-cols-2 gap-3">
                 {serviceCategories.map((cat) => (
                   <button
